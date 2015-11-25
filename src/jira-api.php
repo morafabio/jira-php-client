@@ -1,5 +1,5 @@
 <?php return [
-    'baseUrl' => 'https://dev.jira.insitehome.org',
+    'baseUrl' => 'https://localhost',
     'apiVersion' => '2',
     'operations' => [
         'GetUser' => [
@@ -175,6 +175,23 @@
                     'location' => 'uri',
                 ],
                 'username' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'uri',
+                ],
+            ]
+        ],
+        'GetIssue' => [
+            'httpMethod' => 'GET',
+            'uri' => '/rest/api/{ApiVersion}/issue/{issue}',
+            'responseModel' => 'Result',
+            'parameters' => [
+                'ApiVersion' => [
+                    'required' => true,
+                    'type'     => 'string',
+                    'location' => 'uri',
+                ],
+                'issue' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'uri',

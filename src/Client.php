@@ -1,4 +1,5 @@
 <?php
+
 namespace Jira;
 
 use GuzzleHttp\Client as HttpClient;
@@ -15,6 +16,7 @@ use GuzzleHttp\Subscriber\Retry\RetrySubscriber;
  * @method array deleteUser(array $config = [])
  * @method array deactivateUser(array $config = [])
  * @method array activateUser(array $config = [])
+ * @method array getIssue(array $config = [])
  */
 class Client extends GuzzleClient
 {
