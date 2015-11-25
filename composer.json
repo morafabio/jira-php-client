@@ -1,5 +1,5 @@
 {
-  "name": "silinternational/jira-php-client",
+  "name": "morafabio/jira-php-client",
   "type": "library",
   "description": "PHP client library for interacting with the Jira API",
   "keywords": ["jira","atlassian", "JIRA"],
@@ -22,6 +22,10 @@
     {
       "name": "Ben Duggan",
       "email": "benaduggan@gmail.com"
+    },
+    {
+      "name": "Fabio Mora",
+      "email": "mail@fabiomora.com"
     }
   ],
   "autoload": {
