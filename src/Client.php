@@ -17,6 +17,7 @@ use GuzzleHttp\Subscriber\Retry\RetrySubscriber;
  * @method array deactivateUser(array $config = [])
  * @method array activateUser(array $config = [])
  * @method array getIssue(array $config = [])
+ * @method array postSearch(array $config = [])
  */
 class Client extends GuzzleClient
 {

@@ -197,6 +197,20 @@
                     'location' => 'uri',
                 ],
             ]
+        ],
+        'PostSearch' => [
+            'httpMethod' => 'POST',
+            'uri' => '/rest/api/{ApiVersion}/search',
+            'responseModel' => 'Result',
+            'parameters' => [
+                'ApiVersion' => [
+                    'required' => true,
+                    'type'     => 'string',
+                    'location' => 'uri',
+                ],
+                'payload' => [ 'required' => true, 'type' => 'string', 'location' => 'body' ],
+                'Content-Type' => [ 'type' => 'string', 'location' => 'header', 'default' => 'application/json', 'static' => 'true' ]
+            ]
         ]
     ],
     'models' => [
